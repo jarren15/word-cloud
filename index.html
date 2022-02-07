@@ -8,10 +8,10 @@
     <title>Word Cloud</title>
 </head>
 <body>
-    <div data-wordCloud-controls>
+    <form data-wordCloud-controls onsubmit="submitResponse(event);">
         <input type="text" data-wordCloud-input>
-        <button data-wordCloud-submit onclick="submitResponse();">Submit</button>
-    </div>
+        <button data-wordCloud-submit>Submit Feedback</button>
+    </form>
 
     <div data-wordCloud-container>
 
