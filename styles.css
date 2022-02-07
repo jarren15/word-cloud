@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[data-wordCloud-container] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-wordCloud-container] span {
+    cursor: context-menu;
+    background-color: #fff;
+    transition: .3s all;
+}
+
+[data-wordCloud-container] span:hover {
+    transform: scale(1.5);
+}
+
+
+[data-wordCloud-container] span:nth-child(13n + 1) {
+    color: #19486a;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 2) {
+    color: #0a97d9;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 3) {
+    color: #3f7e44;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 4) {
+    color: #dda63a;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 5) {
+    color: #56c02b;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 6) {
+    color: #dd1367;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 7) {
+    color: #00689d;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 8) {
+    color: #fd6925;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 9) {
+    color: #4c9f38;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 10) {
+    color: #bf8b2e;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 11) {
+    color: #26bde2;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 12) {
+    color: #a21942;
+    font-weight: bold;
+}
+
+[data-wordCloud-container] span:nth-child(13n + 12) {
+    color: #ff3a21;
+    font-weight: bold;
+}
+
