@@ -1,19 +1,34 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 [data-wordCloud-controls] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    border: 2px solid #ff3a21;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }
 
 [data-wordCloud-controls] input {
     outline-color:#ff3a21;
     margin-bottom: 10px;
+    padding: 5px 8px;
 }
 
 
@@ -31,75 +46,120 @@
     color: #fff;
 }
 
+[data-confirmation] {
+    margin-top: 10px;
+    color: #56c02b;
+    display: none;
+}
+
 [data-wordCloud-container] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 115px;
+}
+
+.increased-padding {
+    padding-top: 145px !important;
+}
+
+[data-wordCloud-container] span {
+    padding: 0 8px;
 }
 
 
 [data-wordCloud-container] span:nth-child(13n + 1) {
     color: #19486a;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 2) {
     color: #0a97d9;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 3) {
     color: #3f7e44;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 4) {
     color: #dda63a;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 5) {
     color: #56c02b;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 6) {
     color: #dd1367;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 7) {
     color: #00689d;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 8) {
     color: #fd6925;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 9) {
     color: #4c9f38;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 10) {
     color: #bf8b2e;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 11) {
     color: #26bde2;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 12) {
     color: #a21942;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 [data-wordCloud-container] span:nth-child(13n + 12) {
     color: #ff3a21;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
-

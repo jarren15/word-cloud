@@ -18,7 +18,15 @@ function submitResponse(e){
     if(learnerResponse != ''){
         db.collection("responses").add({
             word: learnerResponse,
-        }).then(data => console.log(`Successfully added ${data}`));
+        }).then(data => {
+            console.log(`Successfully added ${data}`);
+            document.querySelector('[data-confirmation]').style.display = 'block';
+            document.querySelector('[data-wordCloud-container]').classList.add('increased-padding');
+            setTimeout(() => {
+                document.querySelector('[data-confirmation]').style.display = 'none';
+                document.querySelector('[data-wordCloud-container]').classList.remove('increased-padding');
+            }, 2000);
+        });
     }
 
     document.querySelector('[data-wordCloud-input]').value = '';
