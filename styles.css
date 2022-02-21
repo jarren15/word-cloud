@@ -1,8 +1,18 @@
+@font-face {
+    font-family: ibm-plex-sans;
+    src: url("IBM_plex_sans/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: ibm-plex-sans !important;
+}
+
+body {
+    font-family: ibm-plex-sans !important;
 }
 
 [data-wordCloud-controls] {
