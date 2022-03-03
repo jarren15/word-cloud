@@ -39,6 +39,8 @@ db.collection("responses").get().then((querySnapshot) => {
         var {word} = doc.data();
         var span = document.createElement('SPAN');
         span.innerHTML = word;
+        span.setAttribute('tabindex', '0');
+        span.setAttribute('aria-label', word);
         span.style.cssText = `font-size: ${fontSize}rem; font-weight: ${fontWeight};`;
         document.querySelector('[data-wordCloud-container]').appendChild(span);
     });
@@ -52,6 +54,8 @@ db.collection("responses").onSnapshot((querySnapshot) => {
         var {word} = doc.data();
         var span = document.createElement('SPAN');
         span.innerHTML = word;
+        span.setAttribute('tabindex', '0');
+        span.setAttribute('aria-label', word);
         span.style.cssText = `font-size: ${fontSize}rem; font-weight: ${fontWeight};`;
         document.querySelector('[data-wordCloud-container]').appendChild(span);
     });
