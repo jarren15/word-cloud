@@ -8,20 +8,22 @@
     <title>Word Cloud</title>
 </head>
 <body>
-    <form data-wordCloud-controls onsubmit="submitResponse(event);">
+    <form data-wordCloud-controls>
         <input type="text" data-wordCloud-input aria-label="Input Feedback">
         <button data-wordCloud-submit>Submit Feedback</button>
         <p data-confirmation=>Feedback submitted!</p>
     </form>
-
-    <div data-wordCloud-container>
-
+    <div data-loader-container=>
+        <div data-loader></div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <div data-wordCloud-container>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script> -->
+
+    <script src="script.js" type="module"></script>
 </body>
 </html>
 
